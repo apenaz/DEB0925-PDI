@@ -11,6 +11,6 @@ function relatorio(dados)
         alunos(i).Turno=dados(i,6);
         alunos(i).Situacao=dados(i,7);
     end
-    aluno = input('numero do registro: ');
-    disp(alunos(aluno));
+    aluno = input('numero do registro')
+    disp(aluno(1));
 end
