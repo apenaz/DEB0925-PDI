@@ -8,9 +8,8 @@
 
 function im=mascaraFourier(imagem, mascara)
     fftImagem = fftshift(fft2(double(imagem)));
-    fftMascara = fftshift(fft2(double(mascara)));
-    resultadoDoFiltro = fftImagem .* fftMascara;
+    resultadoDoFiltro = fftImagem .* mascara;
     inversa = ifft2( fftshift( resultadoDoFiltro ));
-    im = uint8( inversa );
+    im =  inversa ;
 end
 

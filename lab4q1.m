@@ -1,8 +1,8 @@
-% limpar console e variaveis e fechar janelas abertas
+%% limpar console e variaveis e fechar janelas abertas
 clc;
 clear;
 close all;
-% 1.a
+%% 1.a
 IMG = imread('cameraman.tif');
 imshow(IMG);
 figure;
@@ -13,5 +13,4 @@ figure;
 IV = fftshift(I);
 V = log(abs(II));
 imshow(V, [0 20]);
-% b) Explique porque é necessário centralizar
-% as frequências.
+%% b) Explique porque é necessário centralizar as frequências.
