@@ -14,3 +14,4 @@ IV = fftshift(I);
 V = log(abs(II));
 imshow(V, [0 20]);
 %% b) Explique porque é necessário centralizar as frequências.
+
